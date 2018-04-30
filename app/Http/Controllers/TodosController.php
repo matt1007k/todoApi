@@ -9,7 +9,7 @@ class TodosController extends Controller
 {
     public function index(){
         $todos = Todo::all();
-        return $response()->json([
+        return response()->json([
             'todos' => $todos
         ], 200);
     }
